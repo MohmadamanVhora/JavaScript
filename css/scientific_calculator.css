@@ -1,6 +1,5 @@
 .calculator {
     width: 350px;
-    height: auto;
     background-color: #f2f2f2;
 }
 
@@ -41,22 +40,9 @@
     color: #c2c2c2;
 }
 
-.svg { 
-    width: 20px;
-}
-
-.function-image { 
-    height: 20px;
-}
-
 .rows {
     display: flex;
     align-self: center;
-    /* justify-content: space-between; */
-}
-
-.noflex {
-    display: inline;
 }
 
 .nomargin button {
@@ -68,7 +54,7 @@
 }
 
 .rowno-3 button {
-    width: 137px;
+    width: 130px;
 }
 
 .rows .buttoncolor {
@@ -77,4 +63,42 @@
 
 .rows .equal {
     background-color: #91c1e7;
+}
+
+.trigonometry ul {
+    width: 280px;
+    background-color: #f2f2f2;
+    border-radius: 0;
+    padding: 4px;
+}
+
+.trigonometry ul li {
+    display: inline-block;
+}
+
+.trigonometry ul li button {
+    width: 62px;
+    background-color: #f7f7f7;
+    text-align: center;
+    font-size: 16px;
+    margin: 1px;
+}
+
+.function ul {
+    width: 210px;
+    background-color: #f2f2f2;
+    border-radius: 0;
+    padding: 4px;
+}
+
+.function ul li {
+    display: inline-block;
+}
+
+.function ul li button {
+    width: 61px;
+    background-color: #f7f7f7;
+    text-align: center;
+    font-size: 16px;
+    margin: 1px;
 }
