@@ -1,0 +1,104 @@
+.calculator {
+    width: 350px;
+    background-color: #f2f2f2;
+}
+
+.display #screen {
+    color: black;
+    font-weight: 500;
+    font-size: 45px;
+    border: none;
+    outline: none;
+    background-color: #f2f2f2;
+}
+
+::placeholder {
+    color: black;
+}
+
+.rows button {
+    width: 70px;
+    background-color: #f7f7f7;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    margin: 1px;
+    border-radius: 0;
+}
+
+.rows button:hover {
+    box-shadow: inset 5px 5px 8px rgba(16, 16, 16, .1),
+        inset -5px -5px 8px #fff;
+    background: #fff;
+}
+
+.textcolor {
+    font-weight: bold;
+}
+
+.mc-mr {
+    color: #c2c2c2;
+}
+
+.rows {
+    display: flex;
+    align-self: center;
+}
+
+.nomargin button {
+    background-color: #f2f2f2;
+}
+
+.rowno-1-3 button {
+    font-size: 13px;
+}
+
+.rowno-3 button {
+    width: 130px;
+}
+
+.rows .buttoncolor {
+    background-color: #fcfcfc;
+}
+
+.rows .equal {
+    background-color: #91c1e7;
+}
+
+.trigonometry ul {
+    width: 280px;
+    background-color: #f2f2f2;
+    border-radius: 0;
+    padding: 4px;
+}
+
+.trigonometry ul li {
+    display: inline-block;
+}
+
+.trigonometry ul li button {
+    width: 62px;
+    background-color: #f7f7f7;
+    text-align: center;
+    font-size: 16px;
+    margin: 1px;
+}
+
+.function ul {
+    width: 210px;
+    background-color: #f2f2f2;
+    border-radius: 0;
+    padding: 4px;
+}
+
+.function ul li {
+    display: inline-block;
+}
+
+.function ul li button {
+    width: 61px;
+    background-color: #f7f7f7;
+    text-align: center;
+    font-size: 16px;
+    margin: 1px;
+}

@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Scientific Calculator</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/scientific_calculator.css">
+    </head>
+
+    <body>
+        <div class="container calculator mt-5 pb-1 px-2">
+            <div class="display">
+                <input id="screen" class="p-2 w-100 text-end"
+                    type="text" placeholder="0">
+            </div>
+
+            <div>
+                <div class="rows nomargin rowno-1-3">
+                    <button class="btn button textcolor" id="deg">DEG</button>
+                    <button class="btn button textcolor" onclick="fe()">F-E</button>
+                </div>
+
+                <div class="rows nomargin rowno-1-3">
+                    <button class="btn button mc-mr" onclick="memory_clear()">MC</button>
+                    <button class="btn button mc-mr" onclick="memory_recall()">MR</button>
+                    <button class="btn button textcolor" onclick="memory_add()">M+</button>
+                    <button class="btn button textcolor" onclick="memory_subtract()">M-</button>
+                    <button class="btn button textcolor" onclick="memory_store()">MS</button>
+                </div>
+
+                <div class="rows d-flex nomargin rowno-1-3 rowno-3">
+                    <div class="dropdown trigonometry">
+                        <button class="btn button textcolor dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <small class="fs-5">&lrtri;</small> Trigonometry
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><button class="dropdown-item btn">2<sup>nd</sup></button></li>
+                          <li><button class="dropdown-item btn" onclick="sin()">sin</button></li>
+                          <li><button class="dropdown-item btn" onclick="cos()">cos</button></li>
+                          <li><button class="dropdown-item btn" onclick="tan()">tan</button></li>
+                          <li><button class="dropdown-item btn" onclick="">hyp</button></li>
+                          <li><button class="dropdown-item btn" onclick="sec()">sec</button></li>
+                          <li><button class="dropdown-item btn" onclick="cosec()">csc</button></li>
+                          <li><button class="dropdown-item btn" onclick="cot()">cot</button></li>
+                        </ul>
+                      </div>
+
+                      <div class="dropdown-center function">
+                        <button class="btn button textcolor dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <small class="fs-5">&#x192;</small> Function
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><button class="dropdown-item btn" onclick="mod()">|<i>x</i>|</button></li>
+                            <li><button class="dropdown-item btn" onclick="floor()"> ⌊<i>x</i>⌋</button></li>
+                            <li><button class="dropdown-item btn" onclick="ceiling()">⌈<i>x</i>⌉</button></li>
+                            <li><button class="dropdown-item btn" onclick="random()">rand</button></li>
+                            <li><button class="dropdown-item btn" onclick=""><small>&rarr;dms</small></button></li>
+                            <li><button class="dropdown-item btn" onclick=""><small>&rarr;deg</small></button></li>
+                        </ul>
+                      </div>
+                </div>
+
+                <div class="rows">
+                    <button class="btn button" id="second">2<sup>nd</sup></button>
+                    <button class="btn button" onclick="pi()">π</button>
+                    <button class="btn button" onclick="euler()">e</button>
+                    <button class="btn button" onclick="allClear()">C</button>
+                    <button class="btn button" onclick="backspace()"><img src="images/clear.png"></button>
+                </div>
+
+                <div class="rows">
+                    <button class="btn button" id="square" onclick="square()"><i>x</i><sup>2</sup></button>
+                    <button class="btn button" onclick="reciprocal()"><sup>1</sup>&frasl;<sub><i>x</i></sub></button>
+                    <button class="btn button" onclick="mod()">|<i>x</i>|</button>
+                    <button class="btn button" onclick="exp()">exp</button>
+                    <button class="btn button" onclick="display('Mod')">mod</button>
+                </div>
+
+                <div class="rows">
+                    <button class="btn button" id="square-root" onclick="squareRoot()"><sub><big><sup>2</sup>&radic;<i>x</i></big></sub></button>
+                    <button class="btn button" onclick="display('(')">(</button>
+                    <button class="btn button" onclick="display(')')">)</button>
+                    <button class="btn button" onclick="factorial()"><i>n!</i></button>
+                    <button class="btn button" onclick="display('/')">&divide;</button>
+                </div>
+
+                <div class="rows">
+                    <button class="btn button display-function" id="power" onclick="display('^')"><i>x<sup>y</sup></i></button>
+                    <button class="btn button textcolor buttoncolor" onclick="display('7')">7</button>
+                    <button class="btn button textcolor buttoncolor" onclick="display('8')">8</button>
+                    <button class="btn button textcolor buttoncolor" onclick="display('9')">9</button>
+                    <button class="btn button" onclick="display('*')">&times;</button>
+                </div>
+
+                <div class="rows">
+                    <button class="btn button" id="power-of-10" onclick="display('10^')">10<sup><i>x</i></sup></button>
+                    <button class="btn button textcolor buttoncolor" onclick="display('4')">4</button>
+                    <button class="btn button textcolor buttoncolor" onclick="display('5')">5</button>
+                    <button class="btn button textcolor buttoncolor" onclick="display('6')">6</button>
+                    <button class="btn button" onclick="display('-')">&minus;</button>
+                </div>
+
+                <div class="rows">
+                    <button class="btn button" id="log" onclick="logarithm()">log</button>
+                    <button class="btn button textcolor buttoncolor" onclick="display('1')">1</button>
+                    <button class="btn button textcolor buttoncolor" onclick="display('2')">2</button>
+                    <button class="btn button textcolor buttoncolor" onclick="display('3')">3</button>
+                    <button class="btn button" onclick="display('+')">&plus;</button>
+                </div>
+
+                <div class="rows">
+                    <button class="btn button" id="ln" onclick="ln()">ln</button>
+                    <button class="btn button buttoncolor" onclick="changeSign()"><big><sup>&plus;</sup>&frasl;<sub>&minus;</sub></big></button>
+                    <button class="btn button textcolor buttoncolor" onclick="display('0')">0</button>
+                    <button class="btn button buttoncolor" onclick="display('.')">.</button>
+                    <button class="btn button equal" onclick="equal()">=</button>
+                </div>
+
+            </div>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+                    
+        <script src="javascript/scientific_calculator.js"></script>
+
+    </body>
+</html>
