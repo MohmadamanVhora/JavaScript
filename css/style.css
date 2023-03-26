@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f8f8;
+}
+
+.custom-navbar {
+    background-color: #f6f8f8;
+    position: fixed;
+    font-size: 22px;
+    padding-left: 3.5rem !important;
+}
+
+.custom-padding {
+    padding: 0 4.2rem 0 7.6rem !important;
+    padding-top: 3rem !important;
+}
+
+#home {
+    padding-top: 3.5rem !important;
+}
+
+.custom-padding a {
+    color: black;
+}
+
+.line {
+    width: 90%;
+}
+
+nav a:hover {
+    background-color: #e8f1ef;
+    color: #089292 !important;
+    border-radius: 5px;
+    font-size: 110%;
+}
+
+.heading-section {
+    font-size: 4.5rem;
+}
+
+.carousel-item img {
+    height: 600px !important;
+}

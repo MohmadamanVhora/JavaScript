@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Single Page Application</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg w-100 custom-navbar z-1">
+        <div class="container-fluid  border-bottom border-2 line p-0">
+            <a class="nav-link active fw-semibold" aria-current="page" href="#home">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about-us">About us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#images">Images</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#services">Services</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="custom-padding" id="home">
+        <h1 class="heading-section col-md-8">Designer & <br> Product Strategist</h1>
+        <h3 class="mt-5 col-md-8 ps-2">I bring a founder's mentality to designing products, experiences, brands, and
+            teams.</h3>
+        <hr class="border-2">
+    </div>
+
+    <div class="custom-padding" id="about-us">
+        <h1 class="heading-section col-md-4"><a href="#about-us">About</a></h1>
+        <h3 class="my-5 col-md-7">Designer, developer, and product strategist trying to move the needle.</h3>
+        <hr class="border-5 opacity-100">
+
+        <div class="col-xs-12 col-md-6 px-1 fw-semibold">
+            <p>I've been called a 'pragmatic' designer.<br>I take that as a
+                compliment.</p>
+            <p>My professional work slants towards product design that can
+                make a measurable impact. Usability over style. Stylish when
+                called for.</p>
+            <p>Learning from your customers and shipping delightful, yet
+                useful tools for them is both rewarding and challenging,
+                which is why I've been drawn to working with early products,
+                especially those where you can get to know your users
+                personally.</p>
+            <p>I've had the privilege of working with some great teams on
+                some truly impactful products, and have learned a thing or
+                two along the way. I bring that experience to new ventures
+                and try to share it with folks through mentoring and writing</a>.</p>
+            <p>I tend to think about design like a founder, because I've
+                been one. Balancing process and instinct, the goal is to
+                find harmony between user delight and business strategy, as
+                fast as you can deliver quality.</p>
+            <p class="fw-bold">~Aman Vhora</p>
+        </div>
+        <hr class="border-2">
+    </div>
+
+    <div class="custom-padding" id="images">
+        <h1 class="heading-section pb-2 col-md-4"><a href="#images">Images</a></h1>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="images/AdmitHub AI.png" class="d-block w-100" alt="...">
+                </div>
+
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="images/BevSpot.png" class="d-block w-100" alt="...">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/Lovepop.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <hr class="border-2">
+    </div>
+
+    <div class="custom-padding" id="services">
+        <h1 class="heading-section col-md-4"><a href="#services">Services</a></h1>
+        <h3 class="my-5 col-md-8">Weaving together UX, UI, and brand design with product management and frontend
+            development.</h3>
+
+        <div class="d-flex">
+            <div class="col-4 border border-dark pt-3 px-4">
+                <h3 class="border-bottom border-dark">AdmitHub AI Suite</h3>
+                <p>Leading product design and user research of the SaaS platform helping educators use behavioral
+                    science to
+                    nudge students toward success</p>
+            </div>
+
+            <div class="col-4 border-top border-bottom border-dark pt-3 px-4">
+                <h3 class="border-bottom border-dark">BevSpot Overview</h3>
+                <p>Scaling a startup from prototype to over one thousand “smarter bars and restaurants”</p>
+            </div>
+
+            <div class="col-4 border border-dark pt-3 px-4">
+                <h3 class="border-bottom border-dark">Lovepop</h3>
+                <p>Mapping the customer journey for better UX from e-commerce, through delivery, to return customer</p>
+            </div>
+        </div>
+
+        <div class="d-flex my-5">
+            <div class="col-4 border border-dark pt-3 px-4">
+                <h3 class="border-bottom border-dark">MA Scenic Byways</h3>
+                <p>This website is part of a larger overall branding and marketing effort, including wayfinding,
+                    advertising, and events</p>
+            </div>
+
+            <div class="col-4 border-top border-bottom border-dark pt-3 px-4">
+                <h3 class="border-bottom border-dark">GrubStreet</h3>
+                <p>A new identity for the largest creative writing center in New England. While their organization
+                    outgrew their old headquarters—GrubStreet found they were also outgrowing their original branding
+                    and identity</p>
+            </div>
+
+            <div class="col-4 border border-dark pt-3 px-4">
+                <h3 class="border-bottom border-dark">APE SYSTEM</h3>
+                <p>2011. Identity, website and UI/UX design for a browser-based as well as mobile-based app for this
+                    startup.</p>
+            </div>
+        </div>
+        <hr class="border-2">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
